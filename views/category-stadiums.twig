@@ -1,0 +1,34 @@
+{% include "partials/header.twig" %}
+<main class='main-content'>
+	<div class="container-3">
+			<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></span><span class="breadcrumbs__separator"> / </span><span class="breadcrumbs__current">Наши работы</span></div>
+			<div class="stadiums-header">
+				<div class="stadiums-title"><h1>Стадионы</h1></div>
+				<div class="stadiums-choice-city">
+					<div class="current-city-text">Ваш город:</div>
+					<div class="current-city">Москва</div>
+					<div class="choice-city-button">изменить</div>
+				</div>
+			</div>
+			<div class="stadiums-list">
+				{% for item in 0..8 %}
+				<a href="" class="stadiums-item">
+					<div class="stadiums-item-image"><img src="./assets/images/news.jpg" alt=""></div>
+					<div class="stadiums-item-info">
+						<div class="stadiums-item-name">Олимпийский комплекс «Лужники»</div>
+						<div class="stadiums-item-location">ш. Волоколамское, 69</div>
+					</div>
+				</a>
+				{% endfor %}
+
+
+			</div>
+			<ul data-v-82963a40="" class="pagination list">
+				<li data-v-82963a40="" class="pagination__pg-num active"><a data-v-82963a40="" tabindex="0">1</a></li>
+				<li data-v-82963a40="" class="pagination__pg-num"><a data-v-82963a40="" tabindex="0">2</a></li>
+				<li data-v-82963a40="" class="pagination__pg-num"><a data-v-82963a40="" tabindex="0">3</a></li>
+				<li data-v-82963a40="" class="pagination__pg-num"><a data-v-82963a40="" tabindex="0">4</a></li>
+			</ul>
+	</div>
+</main>
+{% include "partials/footer.twig" %}

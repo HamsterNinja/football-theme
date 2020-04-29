@@ -1,0 +1,79 @@
+{% include "partials/header.twig" %}
+<main class='main-content'>
+	<div class="container-2">
+			<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></span><span class="breadcrumbs__separator"> / </span><span class="breadcrumbs__current">Наши работы</span></div>
+		
+		<div class="livetable-page-inner">
+			<div class="left-sidebar">
+				<div class="left-sidebar-name"><h1>LIVE-ТАБЛО</h1></div>
+				<div class="my-tournaments">
+					<div class="my-tournaments-title">Мои турниры</div>
+					{% for item in 0..3 %}
+					<div class="my-tournaments-item">
+						<a class="my-tournaments-name" href="">Любительский</a>
+						<div class="my-tournaments-delete">
+							<svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1l4.5 4.5M10 10L5.5 5.5m0 0L1 10l9-9" stroke="#E5E5E5"/>
+							</svg>
+						</div>
+					</div>
+					{% endfor %}
+					
+				</div>
+				<div class="tournaments-search">
+					<form action="">
+						<input type="text" placeholder="Найти турнир">
+					</form>
+				</div>
+			</div>
+			<div class="left-block">
+				<div class="all-tournaments-header">
+					<div class="tournaments-calendar"><img src="./assets/images/calendar.svg" alt=""></div>
+					<div class="all-tournaments-buttons">
+						<div class="choice-button active">Вчера</div>
+						<div class="choice-button">Сегодня</div>
+						<div class="choice-button">Завтра</div>
+						<div class="choice-button">
+							<svg class="pulse-svg" width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    						  <circle class="circle first-circle" fill="#478506" cx="9" cy="9" r="8"></circle>
+    						  <circle class="circle second-circle" fill="#478506" cx="9" cy="9" r="6"></circle>
+    						  <circle class="circle third-circle" fill="#478506" cx="9" cy="9" r="4"></circle>
+    						  <circle class="circle" fill="#478506" cx="9" cy="9" r="2"></circle>
+    						</svg>
+    						Сейчас
+    					</div>
+					</div>
+				</div>
+				<div class="all-tournaments-content">
+					<div class="all-tournaments-content-inner">
+						<div class="all-tournaments-content-inner-header">
+							<div class="prev-day"><a href="">Предыдущие события</a></div>
+							<div class="all-tournaments-content-title">События вчера</div>
+							<div class="next-day"><a href="">Следующие события</a></div>
+						</div>
+						<div class="all-tournaments-content-inner-list">
+							{% for item in 0..3 %}
+							    <div class="livetable-item">
+									<div class="livetable-item-name"><a href=""><svg width="8" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 9V0H0v9l4-3.522L8 9z" fill="#cecece"/></svg></a> ПФЛ</div>
+									<div class="livetable-item-row">
+										<div class="livetable-item-column">12:00</div>
+										<div class="livetable-item-column">ЗНАМЯ ТРУДА  - БАВАРИЯ</div>
+										<div class="livetable-item-column">4 : 2</div>
+										<div class="livetable-item-column">Окончен</div>
+									</div>
+									<div class="livetable-item-row">
+										<div class="livetable-item-column">12:00</div>
+										<div class="livetable-item-column">ЗНАМЯ ТРУДА  - БАВАРИЯ</div>
+										<div class="livetable-item-column">4 : 2</div>
+										<div class="livetable-item-column">Окончен</div>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{% include "partials/footer.twig" %}

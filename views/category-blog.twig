@@ -1,0 +1,48 @@
+{% include "partials/header.twig" %}
+<main class='main-content'>
+	<div class="container-2">
+	{% include "partials/livetable.twig" %}
+	<div class="main-content-inner">
+		<div class="left-block">
+			{% include "partials/main-news.twig" %}
+			
+			<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="" itemprop="item"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></span><span class="breadcrumbs__separator"> / </span><span class="breadcrumbs__current">Наши работы</span></div>
+			<div class="blog-autors">
+				{% for item in 0..5 %}
+				    <a href="" class="autor-item">
+				    	<div class="autor-item-img">
+				    		<img src="./assets/images/player.jpg" alt="">
+				    	</div>
+				    	<div class="autor-item-info">
+				    		<div class="autor-item-name">Виталий Чилюшкин</div>
+				    		<table>
+				    			<tr>
+				    				<td>Год рождения:</td>
+				    				<td>1990</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Позиция:</td>
+				    				<td>Вратарь</td>
+				    			</tr>
+				    			<tr>
+				    				<td>Клуб:</td>
+				    				<td>Знамя труда</td>
+				    			</tr>
+				    		</table>
+				    	</div>
+				    </a>
+				{% endfor %}
+			</div>
+			<ul data-v-82963a40="" class="pagination list">
+				<li data-v-82963a40="" class="pagination__pg-num active"><a data-v-82963a40="" tabindex="0">1</a></li>
+				<li data-v-82963a40="" class="pagination__pg-num"><a data-v-82963a40="" tabindex="0">2</a></li>
+				<li data-v-82963a40="" class="pagination__pg-num"><a data-v-82963a40="" tabindex="0">3</a></li>
+				<li data-v-82963a40="" class="pagination__pg-num"><a data-v-82963a40="" tabindex="0">4</a></li>
+			</ul>
+		</div>
+		
+		{% include "partials/sidebar.twig" %}
+	</div>
+	</div>
+</main>
+{% include "partials/footer.twig" %}

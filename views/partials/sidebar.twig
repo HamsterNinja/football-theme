@@ -1,0 +1,92 @@
+<div class="right-block">
+			<div class="tournament-tabs">
+				<div class="tournament-buttons">
+					<div class="choice-button active" data-id="t1">Турнирная таблица</div>
+					<div class="choice-button" data-id="t2">Последние игры</div>
+					<div class="choice-button" data-id="t3">Ближайшие игры</div>
+				</div>
+				<div class="tournament-tabs-content">
+					<div class="tournament-tabs-content-inner" id="t1">
+						<div class="tournament-table">
+							<table>
+								<tr>
+									<td>№</td>
+									<td>Команда</td>
+									<td>Игры</td>
+									<td>Очки</td>
+								</tr>
+								{% for item in 0..9 %}
+								<tr>
+									<td>1</td>
+									<td>Знамя труда</td>
+									<td>1</td>
+									<td>7</td>
+								</tr>
+								{% endfor %}
+							</table>
+						</div>
+					</div>
+					<div class="tournament-tabs-content-inner" id="t2">
+						<div class="tournament-table">
+							<table>
+								<tr>
+									<td>№</td>
+									<td>Команда</td>
+									<td>Игры</td>
+									<td>Очки</td>
+								</tr>
+								{% for item in 0..9 %}
+								<tr>
+									<td>1</td>
+									<td>Знамя труда</td>
+									<td>1</td>
+									<td>7</td>
+								</tr>
+								{% endfor %}
+							</table>
+						</div>
+					</div>
+					<div class="tournament-tabs-content-inner" id="t3">
+						<div class="tournament-table">
+							<table>
+								<tr>
+									<td>№</td>
+									<td>Команда</td>
+									<td>Игры</td>
+									<td>Очки</td>
+								</tr>
+								{% for item in 0..9 %}
+								<tr>
+									<td>1</td>
+									<td>Знамя труда</td>
+									<td>1</td>
+									<td>7</td>
+								</tr>
+								{% endfor %}
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="quiz_block">
+				<div class="quiz-header">
+					<div class="quiz-img"><img src="./assets/images/quest.svg" alt=""></div>
+					<div class="quiz-title">Как вам новый вид опроса?</div>
+				</div>
+				<div class="quiz-content">
+					<form action="">
+						<div class="control-group">
+							{% for item in 0..5 %}
+							  	<label class="control control-radio">
+						        	Отлично
+						            <input type="radio" name="radio" checked="checked" />
+						        	<div class="control_indicator"></div>
+						    	</label>  
+							{% endfor %} 
+						</div>
+						<button class="quiz-submit">Голосовать</button>
+					</form>
+				</div>
+			</div>
+		</div>
